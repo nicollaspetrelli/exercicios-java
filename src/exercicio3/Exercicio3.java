@@ -5,13 +5,13 @@ package exercicio3;
 
 public class Exercicio3 {
     public static void main(String[] args) {
-        long paisA = 90_000_000L;
-        long paisB = 200_000_000L;
+        double paisA = 90_000_000L;
+        double paisB = 200_000_000L;
         int anos = 0;
 
         while (paisA < paisB){
-            paisA = paisA + 2_790_000;
-            //paisB = paisB + 3_000_000;
+            paisA = paisA + (paisA * 3.1) / 100;
+            paisB = paisB + (paisB * 1.5) / 100;
             anos++;
         }
 
