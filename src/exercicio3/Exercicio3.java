@@ -15,7 +15,7 @@ public class Exercicio3 {
             anos++;
         }
 
-        // Total de anos considerando que o PAIS B fique estagnado no seu numero de crescimento
+        // Total de anos para o PaisA ultrapassar o PaisB em numeros de Habitantes
         System.out.println("Total de anos: "+ anos);
     }
 }
