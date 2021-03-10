@@ -17,6 +17,5 @@ public class Exercicio3 {
 
         // Total de anos considerando que o PAIS B fique estagnado no seu numero de crescimento
         System.out.println("Total de anos: "+ anos);
-
     }
 }

@@ -8,21 +8,24 @@ public class Exercicio1 {
 
         System.out.println("=======EXERCICO 01==========");
 
+        /*
+        Solicitar ao usuário o valor de seu salário atual, solicitar também uma porcentagem de  aumento  de  salário
+        almejada. Após  os  cálculos,  exibir  o  valor  do  acréscimo  e  o novo salário acréscimo do aumento desejado.
+        */
+
         System.out.println("Digite o seu salário atual: ");
-        String txtSalario = entrada.nextLine();
+        double salario = entrada.nextDouble();
 
         System.out.println("Digite o percentual de aumento: ");
-        String txtAumento = entrada.nextLine();
+        double porcentagem = entrada.nextDouble();
 
-        // Converte String para Double
-        Double salario = Double.parseDouble(txtSalario);
-        Float aumento = Float.parseFloat(txtAumento);
+        double acrescimo = salario * (porcentagem /100);
+        double novoSalario = salario + acrescimo;
 
-        System.out.println("Salario: "+ salario);
-        System.out.println("Percentual de aumento: "+ aumento);
+        System.out.printf("Salario atual: R$ %.2f\n",salario);
+        System.out.printf("Valor aumento: R$ %.2f\n", acrescimo);
+        System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
 
-        double total = salario + (salario * aumento); //Calculo
-        System.out.println("Salário Total: "+ total);
-
+        entrada.close();
     }
 }
